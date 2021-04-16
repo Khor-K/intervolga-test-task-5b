@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- импорт бутстрапа и css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- импорт anime.js -->
+    <script src="js/anime.min.js"></script>
+    
+    <title>Задание 5б БД</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            Тестовое задание 5б
+        </div>
+    </div>
+
+    <!-- Контент -->
+    <div class="content">
+        <!-- Таблица с БД -->
+        <table class="tableDB">
+            <!-- Заголовок таблицы -->
+            <tr>
+                <td class="tableHeader"><b>ID</b></td>
+                <td class="centered tableHeader"><b>Country</b></td>
+            </tr>
+            <!-- Импорт php с подключением БД и выводом значений в таблицу-->
+            <?php
+            include('php/main.php');
+            ?>
+        </table>
+        <!-- Форма добавления значений в таблицу БД -->
+        <form action="" method="post">
+            <input type="text" name="country">
+            <input type="submit" value="Добавить">
+        </form>
+    </div>
+    <!-- Скрипт с анимацией -->
+    <script src="js/main.js"></script>
+</body>
+</html>
